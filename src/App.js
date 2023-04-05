@@ -1,9 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
-import {BsPencilSquare} from "react-icons/bs"
 import Search from "./components/Search"
 import AddAppointment from "./components/AddAppointment"
 import AppointmentInfo from "./components/AppointmentInfo"
-
+import { BiCalendarPlus } from "react-icons/bi"; 
 
 function App() {
 
@@ -44,7 +43,7 @@ function App() {
   return (
     <div className="App container mx-auto mt-3 font-thin">
       <h1 className="text-5xl mb-3">
-        <BsPencilSquare className="inline-block text-green-700 align-top"/> My Evil Appointments
+        <BiCalendarPlus className="inline-block text-green-700 align-top"/> My Evil Appointments
       </h1>
       <AddAppointment 
       onSendAppointment={myAppointment => setAppointmentList([...appointmentList,myAppointment])}

@@ -28,7 +28,7 @@ const AddAppointment = ({onSendAppointment, lastId}) => {
         <div>
         <button onClick={() => {setToggleForm(!toggleForm) }}
         className="bg-blue-400 text-white px-2 py-3 w-full text-left rounded-t-md">
-          <div><BiCalendarPlus className="inline-block align-text-top" />  Add Appointment</div>
+          <div><BiCalendarPlus className="inline-block align-text-top" />  Click here to Add Appointment</div>
         </button>
         {
           toggleForm && 
