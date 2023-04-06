@@ -8,11 +8,11 @@ const AppointmentInfo = ({appointment, onDeleteAppointment}) => {
             <BiTrash /></button>
             <div className="flex-grow">
     <div className="flex items-center">
-      <span className="flex-none font-medium text-2xl text-blue-700">{appointment.petName}</span>
+      <span className="flex-none font-medium text-2xl text-blue-400">{appointment.petName}</span>
       <span className="flex-grow text-right font-bold">{appointment.aptDate}</span>
     </div>
-    <div><b className="font-bold text-blue-500">Owner: </b>{appointment.ownerName}</div>
-    <div className="leading-tight">{appointment.aptNotes}</div>
+    <div><b className="font-bold text-blue-400">Owner: </b><b className="text-green-500">{ appointment.ownerName}</b></div>
+    <div className="leading-tight font-serif">{appointment.aptNotes}</div>
   </div>
 </li>
     )

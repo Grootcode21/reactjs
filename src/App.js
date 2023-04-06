@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App container mx-auto mt-3 font-thin">
       <h1 className="text-5xl mb-3">
-        <BiCalendarPlus className="inline-block text-green-700 align-top"/> My Evil Appointments
+        <BiCalendarPlus className="inline-block text-green-700 align-top"/> My Appointments
       </h1>
       <AddAppointment 
       onSendAppointment={myAppointment => setAppointmentList([...appointmentList,myAppointment])}
